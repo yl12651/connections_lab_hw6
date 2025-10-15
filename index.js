@@ -46,9 +46,6 @@ const pokemonData = {
 
 // Static HTML "/"
 app.use(express.static(path.join(__dirname, 'public')));
-app.get('/', (_req, res) => {
-  res.sendFile(path.join(__dirname, 'public', 'index.html'));
-});
 
 // Route 2: "/data"
 app.get('/data', (_req, res) => {
